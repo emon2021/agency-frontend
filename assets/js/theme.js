@@ -39,9 +39,11 @@
     $('.one_page').scrollToFixed({
         preFixed: function() {
             $(this).find('.scroll_fixed').addClass('prefix');
+			$('.dtbtn').removeClass('btn-overly');
         },
         postFixed: function() {
             $(this).find('.scroll_fixed').addClass('postfix').removeClass('prefix');
+			$('.dtbtn').addClass('btn-overly');
         }
     });	
 		/* witr_active_id5 Slider Active */		

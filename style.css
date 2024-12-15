@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* === theme style   ==== */
+/* === theme style   === */
+
+
+/* === root css  === */
+:root {
+    --primary-color: #FF6600;
+    --secondary-color: #131820;
+    --primary-text-color: #131820;
+    --secondary-text-color: #fff;
+    --hover-btn-overly: #13182080;
+    --hover-text-color: #0c5adb;
+}
+
 
 a{
      color: #17161a;
@@ -7114,7 +7126,7 @@ p.form-messege{
      display: none;
 }
  .solutech-header-top {
-     background: #0c5adb;
+     background: var(--secondary-color);
      padding: 10px 0;
      padding-right: 200px;
      padding-left: 200px;
@@ -7380,35 +7392,7 @@ p.form-messege{
      color: #fff;
      border-color: #0c5adb;
 }
-/* .no-logo-sr .creative_search_icon {
-     */
-    /* position: absolute;
-     */
-    /* right: 19%;
-     */
-    /* top: 50%;
-     */
-    /* */
-    /* transform: translateY(-50%);
-     */
-    /* z-index: 999;
-     */
-    /* 
-}
- */
-/* .no-logo-sr .em-quearys-top.msin-menu-search .em-quearys-inner {
-     */
-    /* top: 70px;
-     */
-    /* 
-}
- */
- .no-logo-sr .solutech_menu ul {
-     text-align: center;
-}
- .no-logo-sr .solutech_menu ul li {
-     text-align: left;
-}
+
 /*======================= solutech HEADING NAV AREA CSS ========================*/
  .mean-container .mean-bar {
      padding: 0;
@@ -7617,7 +7601,7 @@ p.form-messege{
      transition: .3s;
 }
  .solutech_nav_area.prefix, .hbg2 {
-     background:#153d7a;
+     background: var(--secondary-color);
 }
  .solutech_nav_area.prefix .solutech_menu > ul > li > a {
      color:#fff;
@@ -7769,14 +7753,25 @@ p.form-messege{
      font-size: 17px;
      margin-left: 20px;
      font-weight: 500;
-     background-color: #0c5adb;
+     background-color: var(--primary-color);
      border-radius: 30px;
      color: #fff;
      padding: 13px 25px;
 }
+.btn-overly::before
+{
+     content: "";
+     background: var(--secondary-color) !important;
+}
+
  a.dtbtn:hover {
      background-color: #0c5adb;
 }
+
+.btn-overly:hover{
+     color: var(--secondary-text-color) !important;
+}
+
  .redX {
      color: #0c5adb;
 }
@@ -11328,7 +11323,8 @@ p.form-messege{
      color:#0c5adb;
 }
  a.dtbtn:hover, .witr_btn:hover, .solutech_button a:hover{
-     background:#0c5adb;
+     background:var(--primary-color);
+     color:var(--primary-text-color);
 }
  a.dtbtn::before, .witr_btn::before, .witr_bbtn::before, .solutech_button a::before, .witr_sbtn_s8 a::before {
      transition: 0.5s;
@@ -11338,7 +11334,7 @@ p.form-messege{
      content: "";
      bottom: 0;
      left: -38px;
-     background:#00247e;
+     background: var(--secondary-text-color);
      z-index: -1;
      border-radius:50px;
 }
